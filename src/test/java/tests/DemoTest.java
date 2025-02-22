@@ -19,8 +19,7 @@ public class DemoTest  extends BaseTest {
         createMonsterPage.enterMonstesDefence("1");
         createMonsterPage.enterMonstesSpeed("100");
         createMonsterPage.createMonster(createMonsterPage.firstMonsterIcon);
-        Assert.assertTrue(BrowserUtils.getElementCount(driver, createMonsterPage.monsterOnPage)>0);
-        Thread.sleep(4000);
+        Assert.assertEquals(BrowserUtils.getElementCount(driver, createMonsterPage.monsterOnPage), 1);
 
     }
 
@@ -34,9 +33,10 @@ public class DemoTest  extends BaseTest {
         createMonsterPage.enterMonstesDefence(BrowserUtils.generateRandomNumber());
         createMonsterPage.enterMonstesSpeed(BrowserUtils.generateRandomNumber());
         createMonsterPage.createMonster(createMonsterPage.secondMonsterIcon);
-        Assert.assertTrue(BrowserUtils.getElementCount(driver, createMonsterPage.monsterOnPage)>0);
+        Assert.assertEquals(BrowserUtils.getElementCount(driver, createMonsterPage.monsterOnPage), 1);
         createMonsterPage.deleteMonster();
         Assert.assertEquals(BrowserUtils.getElementCount(driver, createMonsterPage.monsterOnPage),0);
+        Assert.assertEquals(BrowserUtils.getElementCount(driver, createMonsterPage.noMonstersMessage), 1);
 
     }
 

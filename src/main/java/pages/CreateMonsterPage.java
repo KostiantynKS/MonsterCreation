@@ -25,6 +25,7 @@ public class CreateMonsterPage {
     public By createMonsterButton = By.xpath("//button[contains(text(), 'Create Monster')]");
     public By monsterOnPage = By.xpath("//div[@data-testid='monster-card']");
     public By deleteMonster = By.xpath("//button[contains(text(), 'Delete')]");
+    public By noMonstersMessage = By.xpath("//p[contains(text(), 'There are no monsters')]");
 
     public void enterMonsterName(String name){
         driver.findElement(monsterName).sendKeys(name);
