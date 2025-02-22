@@ -2,6 +2,7 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class CreateMonsterPage {
 
@@ -17,6 +18,7 @@ public class CreateMonsterPage {
     public By monsterAttack = By.xpath("//input[@name='attack']");
     public By monsterSpeed = By.xpath("//input[@name='speed']");
     public By firstMonsterIcon = By.xpath("//div[@data-testid='monster-1']");
+    public By secondMonsterIcon = By.xpath("//div[@data-testid='monster-2']");
     public By createMonsterButton = By.xpath("//button[contains(text(), 'Create Monster')]");
     public By monsterOnPage = By.xpath("//div[@data-testid='monster-card']");
     public By deleteMonster = By.xpath("//button[contains(text(), 'Delete')]");
@@ -36,8 +38,8 @@ public class CreateMonsterPage {
     public void enterMonstesSpeed(String speed){
         driver.findElement(monsterSpeed).sendKeys(speed);
     }
-    public void createMonster(){
-        driver.findElement(firstMonsterIcon).click();
+    public void createMonster(By monsterType) {
+        driver.findElement(monsterType).click();
         driver.findElement(createMonsterButton).click();
     }
     public void deleteMonster(){

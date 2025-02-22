@@ -18,7 +18,7 @@ public class DemoTest  extends BaseTest {
         createMonsterPage.enterMonstesAttack("78");
         createMonsterPage.enterMonstesDefence("1");
         createMonsterPage.enterMonstesSpeed("100");
-        createMonsterPage.createMonster();
+        createMonsterPage.createMonster(createMonsterPage.firstMonsterIcon);
         Assert.assertTrue(BrowserUtils.getElementCount(driver, createMonsterPage.monsterOnPage)>0);
         Thread.sleep(4000);
 
@@ -33,10 +33,49 @@ public class DemoTest  extends BaseTest {
         createMonsterPage.enterMonstesAttack(BrowserUtils.generateRandomNumber());
         createMonsterPage.enterMonstesDefence(BrowserUtils.generateRandomNumber());
         createMonsterPage.enterMonstesSpeed(BrowserUtils.generateRandomNumber());
-        createMonsterPage.createMonster();
+        createMonsterPage.createMonster(createMonsterPage.secondMonsterIcon);
         Assert.assertTrue(BrowserUtils.getElementCount(driver, createMonsterPage.monsterOnPage)>0);
         createMonsterPage.deleteMonster();
         Assert.assertEquals(BrowserUtils.getElementCount(driver, createMonsterPage.monsterOnPage),0);
+
+    }
+
+    @Test
+    public void addAllMonsters() throws InterruptedException {
+        CreateMonsterPage createMonsterPage = new CreateMonsterPage(driver);
+        Assert.assertEquals(driver.getTitle(), ConfigConstants.TITLE);
+        createMonsterPage.enterMonsterName("Monster1");
+        createMonsterPage.enterMonsterHP(BrowserUtils.generateRandomNumber());
+        createMonsterPage.enterMonstesAttack(BrowserUtils.generateRandomNumber());
+        createMonsterPage.enterMonstesDefence(BrowserUtils.generateRandomNumber());
+        createMonsterPage.enterMonstesSpeed(BrowserUtils.generateRandomNumber());
+        createMonsterPage.createMonster(createMonsterPage.secondMonsterIcon);
+        createMonsterPage.enterMonsterName("Monster2");
+        createMonsterPage.enterMonsterHP(BrowserUtils.generateRandomNumber());
+        createMonsterPage.enterMonstesAttack(BrowserUtils.generateRandomNumber());
+        createMonsterPage.enterMonstesDefence(BrowserUtils.generateRandomNumber());
+        createMonsterPage.enterMonstesSpeed(BrowserUtils.generateRandomNumber());
+        createMonsterPage.createMonster(createMonsterPage.firstMonsterIcon);
+        createMonsterPage.enterMonsterName("Monster3");
+        createMonsterPage.enterMonsterHP(BrowserUtils.generateRandomNumber());
+        createMonsterPage.enterMonstesAttack(BrowserUtils.generateRandomNumber());
+        createMonsterPage.enterMonstesDefence(BrowserUtils.generateRandomNumber());
+        createMonsterPage.enterMonstesSpeed(BrowserUtils.generateRandomNumber());
+        createMonsterPage.createMonster(createMonsterPage.secondMonsterIcon);
+        createMonsterPage.enterMonsterName("Monster4");
+        createMonsterPage.enterMonsterHP(BrowserUtils.generateRandomNumber());
+        createMonsterPage.enterMonstesAttack(BrowserUtils.generateRandomNumber());
+        createMonsterPage.enterMonstesDefence(BrowserUtils.generateRandomNumber());
+        createMonsterPage.enterMonstesSpeed(BrowserUtils.generateRandomNumber());
+        createMonsterPage.createMonster(createMonsterPage.firstMonsterIcon);
+        createMonsterPage.enterMonsterName("Monster5");
+        createMonsterPage.enterMonsterHP(BrowserUtils.generateRandomNumber());
+        createMonsterPage.enterMonstesAttack(BrowserUtils.generateRandomNumber());
+        createMonsterPage.enterMonstesDefence(BrowserUtils.generateRandomNumber());
+        createMonsterPage.enterMonstesSpeed(BrowserUtils.generateRandomNumber());
+        createMonsterPage.createMonster(createMonsterPage.firstMonsterIcon);
+        Assert.assertEquals(BrowserUtils.getElementCount(driver, createMonsterPage.monsterOnPage),5);
+        Thread.sleep(10000);
 
     }
 
