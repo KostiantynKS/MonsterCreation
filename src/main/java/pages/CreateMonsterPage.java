@@ -19,6 +19,9 @@ public class CreateMonsterPage {
     public By monsterSpeed = By.xpath("//input[@name='speed']");
     public By firstMonsterIcon = By.xpath("//div[@data-testid='monster-1']");
     public By secondMonsterIcon = By.xpath("//div[@data-testid='monster-2']");
+    public By thirdMonsterIcon = By.xpath("//div[@data-testid='monster-3']");
+    public By fourthMonsterIcon = By.xpath("//div[@data-testid='monster-4']");
+    public By fifthMonsterIcon = By.xpath("//div[@data-testid='monster-5']");
     public By createMonsterButton = By.xpath("//button[contains(text(), 'Create Monster')]");
     public By monsterOnPage = By.xpath("//div[@data-testid='monster-card']");
     public By deleteMonster = By.xpath("//button[contains(text(), 'Delete')]");
