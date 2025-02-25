@@ -13,13 +13,14 @@ public class DemoTest  extends BaseTest {
     public void monsterCreation() throws InterruptedException {
         CreateMonsterPage createMonsterPage = new CreateMonsterPage(driver);
         Assert.assertEquals(driver.getTitle(), ConfigConstants.TITLE);
-        createMonsterPage.enterMonsterName("Vasya");
-        createMonsterPage.enterMonsterHP("12");
-        createMonsterPage.enterMonstesAttack("78");
-        createMonsterPage.enterMonstesDefence("1");
-        createMonsterPage.enterMonstesSpeed("100");
+        createMonsterPage.enterMonsterName("Jon");
+        createMonsterPage.enterMonsterHP(BrowserUtils.generateRandomNumber());
+        createMonsterPage.enterMonstesAttack(BrowserUtils.generateRandomNumber());
+        createMonsterPage.enterMonstesDefence(BrowserUtils.generateRandomNumber());
+        createMonsterPage.enterMonstesSpeed(BrowserUtils.generateRandomNumber());
         createMonsterPage.createMonster(createMonsterPage.firstMonsterIcon);
         Assert.assertEquals(BrowserUtils.getElementCount(driver, createMonsterPage.monsterOnPage), 1);
+        BrowserUtils.captureScreenshot(driver);
 
     }
 
@@ -27,7 +28,7 @@ public class DemoTest  extends BaseTest {
     public void monsterDelete(){
         CreateMonsterPage createMonsterPage = new CreateMonsterPage(driver);
         Assert.assertEquals(driver.getTitle(), ConfigConstants.TITLE);
-        createMonsterPage.enterMonsterName("Vasya");
+        createMonsterPage.enterMonsterName("Jon");
         createMonsterPage.enterMonsterHP(BrowserUtils.generateRandomNumber());
         createMonsterPage.enterMonstesAttack(BrowserUtils.generateRandomNumber());
         createMonsterPage.enterMonstesDefence(BrowserUtils.generateRandomNumber());
@@ -37,6 +38,7 @@ public class DemoTest  extends BaseTest {
         createMonsterPage.deleteMonster();
         Assert.assertEquals(BrowserUtils.getElementCount(driver, createMonsterPage.monsterOnPage),0);
         Assert.assertEquals(BrowserUtils.getElementCount(driver, createMonsterPage.noMonstersMessage), 1);
+        BrowserUtils.captureScreenshot(driver);
 
     }
 
@@ -75,6 +77,7 @@ public class DemoTest  extends BaseTest {
         createMonsterPage.enterMonstesSpeed(BrowserUtils.generateRandomNumber());
         createMonsterPage.createMonster(createMonsterPage.fifthMonsterIcon);
         Assert.assertEquals(BrowserUtils.getElementCount(driver, createMonsterPage.monsterOnPage),5);
+        BrowserUtils.captureScreenshot(driver);
 
     }
 
