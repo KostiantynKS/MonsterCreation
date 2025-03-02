@@ -1,0 +1,78 @@
+2025-03-02 11:49:09 [main] INFO  utils.Log - Starting add all monster monster test
+2025-03-02 11:49:09 [main] INFO  utils.Log - Monster1 was successfully created
+2025-03-02 11:49:09 [main] INFO  utils.Log - Monster2 was successfully created
+2025-03-02 11:49:10 [main] INFO  utils.Log - Monster3 was successfully created
+2025-03-02 11:49:10 [main] INFO  utils.Log - Monster4 was successfully created
+2025-03-02 11:49:10 [main] INFO  utils.Log - Monster5 was successfully created
+2025-03-02 11:49:10 [main] INFO  utils.Log - All monsters are present on the page
+2025-03-02 11:49:12 [main] INFO  utils.Log - Starting monster creation test
+2025-03-02 11:49:13 [main] INFO  utils.Log - Monster was successfully created
+2025-03-02 11:49:15 [main] INFO  utils.Log - Starting monster delete test
+2025-03-02 11:49:16 [main] INFO  utils.Log - Monster was successfully created
+2025-03-02 11:49:26 [main] INFO  utils.Log - Monster was successfully deleted
+2025-03-02 12:04:24 [main] INFO  utils.Log - Starting add all monster monster test
+2025-03-02 12:04:24 [main] INFO  utils.Log - Monster1 was successfully created
+2025-03-02 12:04:24 [main] INFO  utils.Log - Monster2 was successfully created
+2025-03-02 12:04:25 [main] INFO  utils.Log - Monster3 was successfully created
+2025-03-02 12:04:25 [main] INFO  utils.Log - Monster4 was successfully created
+2025-03-02 12:04:25 [main] INFO  utils.Log - Monster5 was successfully created
+2025-03-02 12:04:25 [main] INFO  utils.Log - All monsters are present on the page
+2025-03-02 12:04:27 [main] INFO  utils.Log - Starting monster creation test
+2025-03-02 12:04:28 [main] INFO  utils.Log - Monster was successfully created
+2025-03-02 12:04:30 [main] INFO  utils.Log - Starting monster delete test
+2025-03-02 12:04:30 [main] INFO  utils.Log - Monster was successfully created
+2025-03-02 12:04:40 [main] INFO  utils.Log - Monster was successfully deleted
+2025-03-02 12:14:13 [main] INFO  utils.Log - Starting add all monster monster test
+2025-03-02 12:14:13 [main] INFO  utils.Log - Monster1 was successfully created
+2025-03-02 12:14:13 [main] INFO  utils.Log - Monster2 was successfully created
+2025-03-02 12:14:14 [main] INFO  utils.Log - Monster3 was successfully created
+2025-03-02 12:14:14 [main] INFO  utils.Log - Monster4 was successfully created
+2025-03-02 12:14:14 [main] INFO  utils.Log - Monster5 was successfully created
+2025-03-02 12:14:14 [main] INFO  utils.Log - All monsters are present on the page
+2025-03-02 12:14:16 [main] INFO  utils.Log - Starting monster creation test
+2025-03-02 12:14:17 [main] INFO  utils.Log - Monster was successfully created
+2025-03-02 12:14:19 [main] INFO  utils.Log - Starting monster delete test
+2025-03-02 12:14:19 [main] INFO  utils.Log - Monster was successfully created
+2025-03-02 12:14:29 [main] INFO  utils.Log - Monster was successfully deleted
+2025-03-02 12:14:44 [main] INFO  utils.Log - Starting add all monster monster test
+2025-03-02 12:14:44 [main] INFO  utils.Log - Monster1 was successfully created
+2025-03-02 12:14:45 [main] INFO  utils.Log - Monster2 was successfully created
+2025-03-02 12:14:45 [main] INFO  utils.Log - Monster3 was successfully created
+2025-03-02 12:14:45 [main] INFO  utils.Log - Monster4 was successfully created
+2025-03-02 12:14:46 [main] INFO  utils.Log - Monster5 was successfully created
+2025-03-02 12:14:46 [main] INFO  utils.Log - All monsters are present on the page
+2025-03-02 12:14:48 [main] INFO  utils.Log - Starting monster creation test
+2025-03-02 12:14:48 [main] INFO  utils.Log - Monster was successfully created
+2025-03-02 12:14:50 [main] INFO  utils.Log - Starting monster delete test
+2025-03-02 12:14:50 [main] INFO  utils.Log - Monster was successfully created
+2025-03-02 12:15:00 [main] INFO  utils.Log - Monster was successfully deleted
+2025-03-02 12:15:19 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\konst\AppData\Local\JetBrains\IntelliJIdea2024.2\temp-testng-customsuite.xml
+
+2025-03-02 12:15:21 [main] INFO  utils.Log - Starting add all monster monster test
+2025-03-02 12:15:21 [main] INFO  utils.Log - Monster1 was successfully created
+2025-03-02 12:15:21 [main] INFO  utils.Log - Monster2 was successfully created
+2025-03-02 12:15:22 [main] INFO  utils.Log - Monster3 was successfully created
+2025-03-02 12:15:22 [main] INFO  utils.Log - Monster4 was successfully created
+2025-03-02 12:15:22 [main] INFO  utils.Log - Monster5 was successfully created
+2025-03-02 12:15:22 [main] INFO  utils.Log - All monsters are present on the page
+2025-03-02 12:15:24 [main] INFO  utils.Log - Starting monster creation test
+2025-03-02 12:15:25 [main] INFO  utils.Log - Monster was successfully created
+2025-03-02 12:15:27 [main] INFO  utils.Log - Starting monster delete test
+2025-03-02 12:15:27 [main] INFO  utils.Log - Monster was successfully created
+2025-03-02 12:15:37 [main] INFO  utils.Log - Monster was successfully deleted
+2025-03-02 12:19:24 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\konst\AppData\Local\JetBrains\IntelliJIdea2024.2\temp-testng-customsuite.xml
+
+2025-03-02 12:19:27 [main] INFO  utils.Log - Starting add all monster monster test
+2025-03-02 12:19:27 [main] INFO  utils.Log - Monster1 was successfully created
+2025-03-02 12:19:28 [main] INFO  utils.Log - Monster2 was successfully created
+2025-03-02 12:19:28 [main] INFO  utils.Log - Monster3 was successfully created
+2025-03-02 12:19:28 [main] INFO  utils.Log - Monster4 was successfully created
+2025-03-02 12:19:29 [main] INFO  utils.Log - Monster5 was successfully created
+2025-03-02 12:19:29 [main] INFO  utils.Log - All monsters are present on the page
+2025-03-02 12:19:35 [main] INFO  utils.Log - Starting monster creation test
+2025-03-02 12:19:36 [main] INFO  utils.Log - Monster was successfully created
+2025-03-02 12:19:45 [main] INFO  utils.Log - Starting monster delete test
+2025-03-02 12:19:45 [main] INFO  utils.Log - Monster was successfully created
+2025-03-02 12:19:55 [main] INFO  utils.Log - Monster was successfully deleted
